@@ -1,0 +1,212 @@
+/* Faire une sélection de police */
+
+
+body
+{
+    margin: 0px;
+    padding:  0px;
+}
+
+/* Barre de navigation */
+nav
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    background-color: black;
+    height: 50px;
+}
+
+nav .onglets /* Alignement des onglets */
+{
+    display:  flex;
+    flex-wrap: wrap;
+}
+
+nav .onglets input
+{
+    background-color: #edeff0;
+    margin:  8px 20px;
+    padding:  10px;
+    border: none;
+    outline:  none;
+    border-radius: 35px;
+}
+
+nav .onglets p
+{
+    font-size: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+nav .onglets p:hover
+{
+    text-decoration: underline;
+}
+
+nav img
+{
+    max-width: 50px;
+    max-height: 50px;
+    cursor: pointer;
+}
+/* Fin barre navigation */
+
+
+/* Section principale */
+.main
+{
+    margin-top: 200px;
+    margin: 10px;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+
+.desc{
+    justify-content: center;
+    margin-right: 200px;
+    margin-left: 200px;
+    text-align: justify;
+}
+
+
+.desc p
+{
+    font-size: 17px;
+    color: grey;
+    text-align: justify;
+}
+.desc h1{
+    font-size: 40px;
+    color:black;
+    text-align: left;
+    text-decoration: underline;
+}
+
+.desc h2{
+    font-size: 40px;
+    color:black;
+    text-align: left;
+}
+.desc h3{
+    font-size: 20px;
+    text-align: justify;
+    text-decoration: underline;
+}
+
+.desc h3:hover
+{
+    cursor: pointer;
+}
+
+/* images*/
+.images
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.images .image
+{
+    margin-right: 25px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-left: 200px;
+    float: right;
+}
+
+.images .image img
+{
+    width: 300px;
+}
+
+/* Fin image */
+
+
+/* Fin section principale */
+
+
+/* Footer */
+footer
+{
+    margin-top: 80px;
+    padding:15px;
+    background-color: black;
+    color: white;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+
+footer .reseaux
+{
+    display:flex;
+}
+
+footer .reseaux p
+{
+    margin-right:20px;
+    cursor: pointer;
+}
+/* Fin footer */
+
+@media screen and (max-width: 640px)
+{
+
+      header h1
+    {   
+        font-size: 30px;
+        max-width: 250px;
+    }
+
+    header button
+    {
+        font-size: 15px;
+        padding:  10px 15px;
+    }
+
+    nav
+    {
+        height: 110px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav .onglets .link
+    {
+        display:none;
+    }
+
+    nav .onglets p
+    {
+        font-size: 17px;
+    }
+
+    .images
+    {
+        padding-left: 15px;
+    }
+
+    .images .image
+    {
+        margin-left:10px;
+    }
+    .images .image img
+    {
+        width:300px;
+    }
+
+    .description_article
+    {
+        margin-top: -20px;
+    }
+}
