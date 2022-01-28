@@ -1,0 +1,165 @@
+/* Faire une sélection de police */
+
+
+body
+{
+    margin: 0px;
+    padding:  0px;
+}
+
+/* Barre de navigation */
+nav
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    background-color: black;
+    height: 50px;
+}
+
+nav .onglets /* Alignement des onglets */
+{
+    display:  flex;
+    flex-wrap: wrap;
+}
+
+nav .onglets input
+{
+    background-color: #edeff0;
+    margin:  8px 20px;
+    padding:  10px;
+    border: none;
+    outline:  none;
+    border-radius: 35px;
+}
+
+nav .onglets p
+{
+    font-size: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+nav .onglets p:hover
+{
+    text-decoration: underline;
+}
+
+nav img
+{
+    max-width: 50px;
+    max-height: 50px;
+    cursor: pointer;
+}
+/* Fin barre navigation */
+
+
+/* Section principale */
+.main
+{
+    
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titre
+{
+    margin: 40px;
+    text-align: center ;
+}
+
+h2
+{
+    margin-top: -20px;
+}
+
+.desc p
+{
+    margin: 20px 50px;
+    text-align: justify;
+}
+
+/* Fin section principale */
+
+/* Footer */
+footer
+{   
+    margin-top: 80px;
+    padding:15px;
+    background-color: black;
+    color: white;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+
+footer .reseaux
+{
+    display:flex;
+}
+
+footer .reseaux p
+{
+    margin-right:20px;
+    cursor: pointer;
+}
+/* Fin footer */
+
+@media screen and (max-width: 640px)
+{
+
+      header h1
+    {   
+        font-size: 30px;
+        max-width: 250px;
+    }
+
+    header button
+    {
+        font-size: 15px;
+        padding:  10px 15px;
+    }
+
+    nav
+    {
+        height: 110px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav .onglets .link
+    {
+        display:none;
+    }
+
+    nav .onglets p
+    {
+        font-size: 17px;
+    }
+
+    .images
+    {
+        padding-left: 15px;
+    }
+
+    .images .image
+    {
+        margin-left:10px;
+    }
+    .images .image img
+    {
+        width:300px;
+    }
+
+    .description_article
+    {
+        margin-top: -20px;
+    }
+}
