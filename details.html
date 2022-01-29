@@ -35,10 +35,36 @@
       <p> Ce projet s'est fait dans le cadre d'un devoir universitaire et n'a aucunement été fait à des fins commerciales. Il a été réalisé par deux étudiants en informatique, Florian Hauwelle et Mathieu Willem, exclusivement en HTLM et CSS. Merci aux hébergeurs concernés pour l'utilisation des images au sein de ce site web.
     </div>
     <h2>Détails globaux</h2>
+      <p> Ce site a été fait dans le cadre d'un projet informatique d'école pour l'IUT Lyon 1 Informatique.<br/>
+        Ce projet est composé de plusieurs pages HTML associés à différentes pages CSS, la proportion est d'environ 75% de HTML pour 25% de CSS. Toutes les pages ont été vérifiées au validateur W3C une par une. Le site est également responsive.<br/>
+        Les liens entre les fichiers sont les suivants:
+        <ul>
+          <li>style_accueil.css avec index.html pour notre page d'accueil</li>
+          <li>style_details.css avec details.html pour la partie détails techniques</li>
+          <li>style_equipe.css avec equipe.html pour la partie qui sommes-nous</li>
+          <li>style_panier.css avec toutes les pages représentant un panier que ce soit homme, femme, enfant, vide ect...</li>
+          <li>style_produit.css avec toutes les pages des différents produits homme, femme, enfant, accessoires.</li>
+        </ul>
+
+        Chaque page HTML a été pensé sous la même structure que nous détaillerons dans la partie <i> Création chartre graphique </i>.
+
     <h2>Création chartre graphique</h2>
+      <p>Nous sommes partis d'un croquis fait sur une feuille blanche afin d'élaborer notre chartre graphique qui nous servirait de base durant l'ensemble du projet. Le design du site a donc une structure commune comme vous pouvez le constater. Ainsi la barre de navigation et le footer sont identiques à chaque page afin de coller à nos besoins.<br/>
+      Le footer sert aux clients à connaître nos dernières actualités grâce à des liens renvoyant vers nos réseaux sociaux (Instagram, Facebook, Twitter et LinkedIn). De plus nous avons également pensé aux personnes n'étant pas très fan des réseaux en leur donnant la possibilité des contacter directement notre hotline via le numéro indiqué dans la partie gauche de notre footer.<br/>
+      Concernant notre barre de navigation, elle permet aux utilisateurs de naviguer au-travers des différentes composantes du site sans passer par les multiples boutons et liens de chaque page. Nous avons décidé de la faire fonctionner en <i>position: sticky</i> en CSS afin de permettre aux clients une navigation rapide et plus fluide tout au long de leur expérience sur notre site. Elle contient également le logo de notre marque H&W ainsi que la barre de recherche permettant d'envoyer l'utilisateur vers une page précise, vu que nous ne pouvons pas utiliser de langage permettant une gestion client-serveur nous avons donc dû renvoyer toutes les requêtes vers la même pas produit.
+      Enfin les 2 icônes à droite de la barre de navigation permettent d'accéder au panier ainsi que la page Détails techniques.</p>
+
     <h2>Fiches produits</h2>
+      <p>Les onglets de la barre de navigation renvoie respectivement vers les pages de présentation des produits Homme, Femme, Enfant et Accessoires. Il est à noter que les pages Enfant et Accessoires ont beau représenter le même produit elles sont sur des pages différentes afin de donner de la cohérence à leur présence. Vous pouvez également accéder directement à une page produit (précisément Femme) via la barre de recherche.<br/>
+      Les différentes pages respectent la chartre graphique générale du site (barre de navigation + footer, mêmes couleurs ect...) ainsi que leurs propres codes. A chaque page correspond un article avec 3 photos différentes de l'article en question le tout disposé dans un conteneur en flexbox avec un <i>flex-direction: column</i>. <br/>
+      Le texte correspondant aux produits se trouve à la droite de ces derniers et donne quelques détails sur les articles en question. Un bouton <i>Ajouter à mon panier</i> permet également d'ajouter le produit dans un panier et nous redirige de ce fait vers la page Panier.
+
     <h2>Le panier</h2>
+      <p>Il existe plusieurs pages de panier selon ce que l'utilisateur a mis dedans. De base le panier sera vide, ce qui fait qu'en cliquant sur l'icône panier de la barre de navigation cela redirigera le client vers la page panier vide.<br/>
+        Ensuite il existe différents paniers selon quel(s) article(s) on ajoute. Pour accéder au panier plein, le client doit choisir un produit dans la liste de ceux proposé et cliquer sur le bouton <i>Ajouter à mon panier</i> et ainsi il est redirigé vers son panier. Des templates de panier ont été déjà sélectionné au préalable et il existe plusieurs combinaisons sur lesquels le client peut tomber selon s'il ajoute ou retire un article. Un bouton proposant de valider l'achat s'affiche et renvoit vers une nouvelle page Formulaire_achat.</p>
+
     <h2>La validation de commande</h2>
+    <p>Afin de valider tout le processus de paiement nous avons tenu à créer une page spécifique à la validation de la commande. Cela passe par l'intégration d'un formulaire où plusieurs informations seront demandées à l'utilisateur (Nom, prénom, adresse, email ect...). En cliquant sur le bouton d'envoi du formulaire/validation de commande, le client est redirigé vers une page le remerciant de son achat et le processus de vente s'arrêtera là.</p> 
   </section>
 
 

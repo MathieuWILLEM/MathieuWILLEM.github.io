@@ -183,7 +183,7 @@ footer .reseaux p
 
     nav
     {
-        height: 110px;
+        height: 10%;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;

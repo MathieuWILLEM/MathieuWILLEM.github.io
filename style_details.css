@@ -53,3 +53,79 @@ nav img
     cursor: pointer;
 }
 /* Fin barre navigation */
+
+/* Section principale */
+.main
+{
+    margin: 0px 100px;
+}
+
+h1
+{
+    margin-top: 40px;
+    font-size: 40px;
+    text-align: center;
+}
+
+h2
+{
+    text-decoration: underline;
+}
+
+/* Fin de section principale */
+
+/* Footer */
+footer
+{
+    margin-top: 80px;
+    padding:15px;
+    background-color: black;
+    color: white;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+
+footer .reseaux
+{
+    display:flex;
+}
+
+footer .reseaux p
+{
+    margin-right:20px;
+    cursor: pointer;
+}
+/* Fin footer */
+@media screen and (max-width: 640px)
+{
+
+      header h1
+    {   
+        font-size: 30px;
+        max-width: 250px;
+    }
+
+    nav
+    {
+        height: 10%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav .onglets .link
+    {
+        display:none;
+    }
+
+    nav .onglets p
+    {
+        font-size: 17px;
+    }
+
+    .main
+    {
+        margin: 0px 30px;
+    }
+}
