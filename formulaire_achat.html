@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="style_formulaire_achat.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"/>
+    <title>H&W - Eshopping</title>
+  </head>
+  <body>
+<!-- Barre de navigation -->
+
+    <nav>
+        <img src="images/logoHW.png" alt="" onclick="window.location.href ='index.html';">
+        <div class="onglets">
+          <p class="link" onclick="window.location.href ='index.html';">Accueil</p>
+          <p class="link" onclick="window.location.href ='femme.html';">Femme</p>
+          <p class="link" onclick="window.location.href ='homme.html';">Homme</p>
+          <p class="link" onclick="window.location.href ='enfant.html';">Enfant</p>
+          <p class="link" onclick="window.location.href ='accessoires.html';">Accessoires</p>
+          <form method="post" action="femme.html">
+            <input type="search" placeholder="Rechercher">
+          </form>
+          <p><i class="fas fa-shopping-cart" onclick="window.location.href ='panier_vide.html';"></i></p>
+          <p><i class="fas fa-wrench" onclick="window.location.href ='details.html';"></i></p>
+        </div>
+    </nav>
+
+<!-- Fin barre de navigation -->
+<!-- Section principale -->
+
+  <section class="main">
+    <div class="contactez-nous">
+      <h1>Formulaire de commande</h1>
+      <p> Nous avons encore besoin de quelques informations supplémentaires afin de valider votre commande et de vous l'expédier dans les plus brefs délais :-)</p>
+      <form method="post" action="remerciement.html">
+        <div>
+            <label for="nom">Votre nom</label>
+            <input type="text" id="nom" name="nom" placeholder="Muller" required>
+        </div>
+        <div>
+            <label for="prénom">Votre prénom</label>
+            <input type="text" id="prénom" name="prénom" placeholder="Daniel" required>
+        </div>
+        <div>
+            <label for="email">Votre e-mail</label>
+            <input type="email" id="email" name="email" placeholder="monadresse@mail.com" required>
+        </div>
+        <div>
+            <label for="pays">Dans quel pays résidez-vous ?</label>
+            <select name="pays" id="pays" required>
+              <option value="" disabled selected hidden>Choisissez le pays où vous faire livrer</option>
+              <option value="probleme-compte">France</option>
+              <option value="question-produit">Belgique</option>
+              <option value="suivi-commande">Suisse</option>
+              <option value="autre">Luxembourg</option>
+            </select>
+        </div>
+        <div>
+          <label for="voirie">Rue et N°</label>
+            <input type="text" id="voirie" name="voirie" placeholder="249 avenue Jean Jaurès" required>
+        </div>
+        <div>
+          <label for="ville">Ville</label>
+            <input type="text" id="ville" name="ville" placeholder="Lyon" required>
+        </div>
+        <div>
+          <label for="cp">Code postal</label>
+            <input type="number" id="cp" name="cp" placeholder="69007"required>
+        </div>
+        <div>
+            <label for="message">Commentaire</label>
+            <textarea id="message" name="message" placeholder="Digicode A089*"></textarea>
+        </div>
+        <div>
+        </div>
+        <div>
+          <label for="livraison">Méthode de livraison</label>
+          <input type="radio" id="livraison" name="livraison" value="normale" required>
+          Normale (3 à 5 jours)
+          <input type="radio" id="livraison" name="livraison" value="express" required>
+          Express (sous 48h, hors weekend & jours fériés)
+        </div><br/>
+        <button type="submit">Envoyer mon message</button>
+      </form>
+    </div>
+  </section>
+
+
+
+    <footer>
+      <p>&copy; Contactez-nous au 01-23-45-67-89</p>
+      <div class="reseaux">
+        <p><i class="fab fa-instagram" onclick="window.location.href ='https://www.instagram.com';"></i></p>
+        <p><i class="fab fa-facebook" onclick="window.location.href ='https://www.facebook.com';"/></i></p>
+        <p><i class="fab fa-twitter" onclick="window.location.href ='https://twitter.com';"></i></p>
+        <p><i class="fab fa-linkedin" onclick="window.location.href ='https://www.linkedin.com';"></i></p>
+      </div>
+    </footer>
