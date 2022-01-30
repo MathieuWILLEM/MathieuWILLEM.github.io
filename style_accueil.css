@@ -174,10 +174,15 @@ footer .reseaux p
 @media screen and (max-width: 640px)
 {
 
-      header h1
+    header h1
     {   
         font-size: 30px;
         max-width: 250px;
+    }
+
+    header h2
+    {
+        text-align: center;
     }
 
     header button
