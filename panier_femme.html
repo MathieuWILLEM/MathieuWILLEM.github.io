@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="style_panier.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"/>
+    <title>Votre Panier</title>
+  </head>
+  <body>
+  	<!-- Barre de navigation -->
+
+    <nav>
+        <img src="images/logoHW.png" alt="" onclick="window.location.href ='index.html';">
+        <div class="onglets">
+          <p class="link" onclick="window.location.href ='index.html';">Accueil</p>
+          <p class="link" onclick="window.location.href ='femme.html';">Femme</p>
+          <p class="link" onclick="window.location.href ='homme.html';">Homme</p>
+          <p class="link" onclick="window.location.href ='enfant.html';">Enfant</p>
+          <p class="link" onclick="window.location.href ='accessoires.html';">Accessoires</p>
+          <form method="post" action="femme.html">
+            <input type="search" placeholder="Rechercher">
+          </form>
+          <p><i class="fas fa-shopping-cart" onclick="window.location.href ='panier_vide.html';"></i></p>
+          <p><i class="fas fa-wrench" onclick="window.location.href ='details.html';"></i></p>
+        </div>
+    </nav>
+
+<!-- Fin Barre de navigation -->
+
+<!--Section Principale-->
+
+    <section class="main">
+      <div class="images">
+        <div class="image">
+          <img src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/7de1a0fb-c503-499b-bc1f-914c4f6f809d/legging-taille-mi-basse-one-luxe-pour-6t57wc.png" alt="" onclick="window.location.href ='femme.html';">
+        </div>
+      </div>
+      <div class="desc">
+        <h1>Votre panier chez H&W :</h1>
+        <h3 onclick="window.location.href='femme.html';">Legging 7/8 taille mi-basse pour Femme</h3>
+        <p>Prix de l'article : 94.99 €</p>
+        <button onclick="window.location.href = 'panier_vide.html';">Retirer cet article</button>
+        <h2>Total : 94.99 €</h2>
+        <button onclick="window.location.href = 'formulaire_achat.html';">Je commande !</button>
+      </div>
+    </section>
+
+<!--Fin de section Principale-->
+
+<!--Footer-->
+
+    <footer>
+      <p>&copy; Contactez-nous au 01-23-45-67-89</p>
+      <div class="reseaux">
+<p><i class="fab fa-instagram" onclick="window.location.href ='https://www.instagram.com';"></i></p>
+        <p><i class="fab fa-facebook" onclick="window.location.href ='https://www.facebook.com';"/></i></p>
+        <p><i class="fab fa-twitter" onclick="window.location.href ='https://twitter.com';"></i></p>
+        <p><i class="fab fa-linkedin" onclick="window.location.href ='https://www.linkedin.com';"></i></p>
+      </div>
+    </footer>
+    
+<!--Footer-->
+  </body>
+</html>
