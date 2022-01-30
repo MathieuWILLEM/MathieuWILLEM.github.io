@@ -81,7 +81,7 @@ h2
 
 .desc p
 {
-    margin: 20px 50px;
+    margin: 20px 200px;
     text-align: justify;
 }
 
@@ -120,15 +120,9 @@ footer .reseaux p
         max-width: 250px;
     }
 
-    header button
+     nav
     {
-        font-size: 15px;
-        padding:  10px 15px;
-    }
-
-    nav
-    {
-        height: 110px;
+        height: 10%;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -144,22 +138,14 @@ footer .reseaux p
         font-size: 17px;
     }
 
-    .images
+    h2
     {
-        padding-left: 15px;
+        font-size: 1.2em;
     }
 
-    .images .image
+    .desc p
     {
-        margin-left:10px;
-    }
-    .images .image img
-    {
-        width:300px;
-    }
+        margin: 0px 20px;
 
-    .description_article
-    {
-        margin-top: -20px;
     }
 }
