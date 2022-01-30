@@ -156,8 +156,8 @@ p button{
 /* Footer */
 footer
 {
-    margin-top: 80px;
-    padding:15px;
+    margin-top: 100px;
+    padding:30px;
     background-color: black;
     color: white;
     display:flex;
