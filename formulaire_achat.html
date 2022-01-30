@@ -48,7 +48,7 @@
         <div>
             <label for="pays">Dans quel pays résidez-vous ?</label>
             <select name="pays" id="pays" required>
-              <option value="" disabled selected hidden>Choisissez le pays où vous faire livrer</option>
+              <option value="" disabled selected hidden></option>
               <option value="probleme-compte">France</option>
               <option value="question-produit">Belgique</option>
               <option value="suivi-commande">Suisse</option>
@@ -75,10 +75,10 @@
         </div>
         <div>
           <label for="livraison">Méthode de livraison</label>
-          <input type="radio" id="livraison" name="livraison" value="normale" required>
+          <input type="radio" id="normale" name="livraison" value="normale" required>
           Normale (3 à 5 jours)
-          <input type="radio" id="livraison" name="livraison" value="express" required>
-          Express (sous 48h, hors weekend & jours fériés)
+          <input type="radio" id="express" name="livraison" value="express" required>
+          Express (sous 48h)
         </div><br/>
         <button type="submit">Envoyer mon message</button>
       </form>
