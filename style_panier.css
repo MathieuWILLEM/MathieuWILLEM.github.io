@@ -130,6 +130,15 @@ nav img
 
 /* Fin image */
 
+button{
+  padding: 15px 20px;
+  font-size: 20px;
+  border:none;
+  border-radius: 5px;
+  outline:none;
+  cursor:pointer;
+  background-color: #edeff0
+}
 
 /* Fin section principale */
 
