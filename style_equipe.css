@@ -1,6 +1,3 @@
-/* Faire une sélection de police */
-
-
 body
 {
     margin: 0px;
@@ -61,7 +58,6 @@ nav img
 /* Section principale */
 .main
 {
-    
     margin: 20px;
     display: flex;
     flex-direction: column;
