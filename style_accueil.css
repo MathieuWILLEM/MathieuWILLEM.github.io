@@ -119,6 +119,11 @@ button{
     justify-content: space-between;
 }
 
+.image_header button {
+    margin-right: 80px;
+    margin-left: 80px;
+}
+
 .images .image .description_article p
 {
     margin-top: -10px;
